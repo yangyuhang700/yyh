@@ -1,0 +1,7 @@
+git config --global user.name "yangyuhang700"
+git config --global user.email "905185417@qq.com"
+
+git init
+
+git remote set-url origin https://yangyuhang700:yyh19960615@github.com/yangyuhang700/yyh.git
+
