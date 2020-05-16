@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button">新闻数据</button>
+    <ul id="news"></ul>
+    <script>
+        let oBtn = document.getElementById("button")
+        let oUl = document.getElementById("news")
+
+        oBtn.onclick = function() {
+            let xhr = new XMLHttpRequest()
+            xhr.open("GET", "js/getNews.php")
+            xhr.send()
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        console.log(xhr.responseText);
+                        let arr = JSON.parse(xhr.responseText)
+                        console.log(arr);
+                        arr.forEach((e) => {
+                            oUl.innerHTML += `<li>
+                          <a href="#">${e.title}</a>
+                          <span>${e.date}</span>
+                          </li>`
+                        });
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
