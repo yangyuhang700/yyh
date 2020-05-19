@@ -1,0 +1,4 @@
+ <view wx:for="{{navsObject}}" class="nav-item" wx:key="index">
+   {{item.text}}
+  </view>
+  
