@@ -1,0 +1,94 @@
+.my-profile {
+  height: 400rpx;
+  position: relative;
+  .wser-info-bg {
+    image {
+      width: 100%;
+      filter: blur(28rpx);
+      height: 400rpx;
+     
+    }
+  }
+
+  .image_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    image {
+      height: 172rpx;
+      width: 172rpx;
+      border-radius: 50%;
+    }
+  }
+
+  .nickName {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  button {
+    
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+
+
+.my-orderFunc {
+  // border: 1rpx solid red;
+  display: flex;
+  width: 100%;
+  navigator {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      .iconfont {
+        font-size: 40rpx;
+      }
+      .text {
+        font-size:30rpx;
+      }
+  }
+}
+
+.my-systemFunc {
+  margin-top: 40rpx;
+  // border: 1px solid red;
+  width: 100%;
+  .systemFunc-item {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 100rpx;
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .iconfont {
+        vertical-align: middle;
+        padding: 40rpx;
+        font-size: 50rpx;
+      }
+
+      .text {
+        font-size: 40rpx;
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

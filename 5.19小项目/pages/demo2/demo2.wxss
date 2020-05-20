@@ -1,0 +1,78 @@
+.my-profile {
+  height: 400rpx;
+  position: relative;
+}
+.my-profile .wser-info-bg image {
+  width: 100%;
+  filter: blur(28rpx);
+  height: 400rpx;
+}
+.my-profile .image_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.my-profile .image_wrapper image {
+  height: 172rpx;
+  width: 172rpx;
+  border-radius: 50%;
+}
+.my-profile .nickName {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.my-profile button {
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.my-orderFunc {
+  display: flex;
+  width: 100%;
+}
+.my-orderFunc navigator {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-orderFunc navigator .iconfont {
+  font-size: 40rpx;
+}
+.my-orderFunc navigator .text {
+  font-size: 30rpx;
+}
+.my-systemFunc {
+  margin-top: 40rpx;
+  width: 100%;
+}
+.my-systemFunc .systemFunc-item {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100rpx;
+}
+.my-systemFunc .systemFunc-item .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-systemFunc .systemFunc-item .left .iconfont {
+  vertical-align: middle;
+  padding: 40rpx;
+  font-size: 50rpx;
+}
+.my-systemFunc .systemFunc-item .left .text {
+  font-size: 40rpx;
+}
+.my-systemFunc .systemFunc-item .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,80 @@
+
+<!-- 搜索框 -->
+<view class="container-nav"> 
+  <view class="container-nav-containei">
+    搜索
+  </view>
+</view>
+
+<!-- 轮播图 -->
+<view>
+  <swiper class="slideshow" indicator-dots="{{true}}" indicator-color="black" indicator-active-color="white" autoplay="{{true}}" interval="3000" circular="{{true}}">
+    <block wx:for="{{swiper_list}}" wx:key="index">
+      <swiper-item class="slideshow-item">
+      <image src="{{item.image_src}}"></image>
+     </swiper-item>
+    </block>
+      
+    <!-- <swiper-item class="slideshow-item">
+      <image src="../../images/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item  class="slideshow-item">
+      <image src="../../images/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item  class="slideshow-item">
+      <image src="../../images/banner3.jpg"></image>
+    </swiper-item> -->
+  </swiper>
+</view>
+  
+  <!-- 导航栏 -->
+<view class="nav">
+  <block wx:for="{{catItems}}" wx:key="index" wx:for-item="i">
+     <image src="{{i.image_src}}"></image>
+  </block>
+  <!-- <image src="../../images/cat1.png"></image>
+  <image src="../../images/cat2.png"></image>
+  <image src="../../images/cat3.png"></image>
+  <image src="../../images/cat4.png"></image>
+  <image src="../../images/cat5.png"></image> -->
+</view>
+
+<!-- 结尾部分 -->
+<view class="floorData">
+  <block wx:for="{{floorData}}" wx:key="index" wx:for-item="n">
+    <view class="floorData-title">
+      {{n.floor_title.name}}
+    </view>
+    <view class="floorData-items">
+      <block wx:for="{{n.product_list}}" wx:key="index" wx:for-item="j">
+        <navigator url="{{j.navigator_url}}" hover-class="navigator-hover" open-type="{{j.open_type}}">
+          <image src="{{j.image_src}}"></image>
+        </navigator>
+      </block>
+    </view>
+  </block>
+    
+  <!-- <view class="floorData-title">
+    时尚服饰
+  </view> -->
+    <!-- <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor1.jpg"/>
+    </navigator>
+    <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor2.jpg"/>
+    </navigator>
+    <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor3.jpg"/>
+    </navigator>
+    <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor4.jpg"/>
+    </navigator>
+    <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor5.jpg"/>
+    </navigator>
+    <navigator url="#" hover-class="navigator-hover" open-type="navigate">
+      <image src="../../images/floor6.jpg"/>
+    </navigator> -->
+  
+</view>
+  
